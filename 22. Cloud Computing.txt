@@ -1,0 +1,73 @@
+                                                                      Cloud Computing
+
+What is cloud computing :
+Cloud computing means storing and accessing data and programs over the internet instead of your computer's hard drive.
+
+Characteristics of Cloud Computing :
+Increase users flexibility
+Cost reduction
+Device and location independence
+Automated management
+Virtualization
+
+Types of Cloud Computing Services
+Infrastructure-as-a-service(IaaS) : It will give complete empty infrastructure, you can customize by your own specific way
+	○ Used by system admin
+	○ You can choose your own OS
+	○ Provides infrastructure
+	○ Provides IP Address related to it
+	○ Virtual machine and storage
+Platform-as-a-service(PaaS) : It will give you a runtime environment by this you can develop or deploy the application by tools which is also provided by vendors.
+	○ Used by developer
+	○ Runtime environment
+	○ No need to purchase expensive hardware or software while making or developing
+	○ Platform where you can work
+	
+Software-as-a-service(SaaS) : It will give you a software interface to you for processing all this stuff and backend process will be managed by vendors
+	○ Used by end users or client user
+	○ Servers and resources are managed by the vendors
+	○ No need to installing software, you will require only good internet connection
+	○ Platform independency doesn't require any specific platform
+	○ No access to all the resources
+
+Cloud Deployment Models
+Cloud deployment model selection is based on the enterprise requirements.
+
+Public cloud : Services are rendered over a network that is open for public
+	○ Less cost
+	○ Globally available
+	○ Less customization
+		 
+Private cloud : Cloud infrastructure operated solely for a single organization
+	○ High cost
+	○ Locally available
+	○ High customization
+		 
+Hybrid cloud : Composition of public and private cloud
+	○ Cost efficient
+	○ High customization
+	○ Less cost
+
+What is virtualization ?
+It is the ability to run multiple operating system on a simple physical system and share the underlying resources such as a server, a storage device or a network
+Benefits from Virtualization :
+        ○ Increase business continuity
+	○ Reduce setup cost
+	○ Facilities better backup and data protections
+	 		 
+Security concerns of Cloud
+	1. Third party handling data
+	2. Challenging cyber attacks
+	3. Insider threats
+	4. Government intrusion
+	5. Lack of support
+	 
+Cloud Computing attacks
+	○ Service hijacking using social Engineering attacks
+	○ Service hijacking using network sniffing
+	○ Session hijacking using XSS attack
+	○ Domain name system attack
+	○ SQL injection attacks
+	○ DOS and DDoS
+	○ Man in the cloud attack
+        ○ Insecure encryption and many more

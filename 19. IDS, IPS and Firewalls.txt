@@ -1,0 +1,58 @@
+                                                                 IDS, IPS, Firewall
+
+Firewalls - A firewall is a component which is used to filter the incoming and outgoing OR the inbound and outbound rules of a particular network. A firewall is having
+a database of signatures for the data packets moving inside or outside of a Network. The data packets moving in a Network Traffic having a malicious content can be blocked
+by a firewall according to the rule sets created by a Network Administrator.
+https://youtu.be/aUPoA3MSajU
+
+Types of Firewall :
+
+1. Softwares Based Firewalls : These are the firewalls which is in the form of a application or a software which is having a rule sets of Inbound and outbound Traffic
+coming from a Network.
+
+2. Hardware Based Firewalls : A hardware based firewall is a peripheral which is having a system box with a processor and giving us a Configuration Panel and having
+more advanced features from a Software Based Firewalls.
+
+IDS:
+IDS stands Intrusion Detection System, it is a software or a hardware based program which detects every suspicious activity and create a log for it. It can also create
+the logs and send immediately to the Network Administrator so that they can find out that there is a Intruder in our network.
+
+IPS:
+IPS stands for Intrusion Prevention System, it acts and works by preventing the intruders which have been doing malicious and illegal activities in the Network or with
+there clients immediately.
+
+Honeypots:
+A honeypot is a attracting technique to traps a Hacker, Attacker or a victim which can be a web Application, a Network System or a Access Point(Wireless Connection) which
+seems like absolutely normal but is created to trap the Attackers.
+
+We will use pentbox tool for this.
+
+What is Web aapplication firewall(WAF) -
+It is a technique to provide extra security layer over the Web Applications via configuration of Web Application Firewall [WAF].
+Like - Cloudflare, ASPA Firewall, FirePass, FortiWeb, Huawei Cloud Firewall, HyperGuard, WTS-WAF etc.
+
+Wafw00f is a popular Python program/tool that takes the guesswork of fingerprinting a website's firewall off your hands. Based on the responses to a series of
+carefully crafted web requests, Wafw00f can determine the underlying firewall used by a service that it probes. It is used to identify the WAF over the web applications.
+
+Download Link:- https://github.com/EnableSecurity/wafw00f
+
+Installation :
+#git clone https://github.com/EnableSecurity/wafw00f.git
+#cd wafw00f
+#chmod 777 *
+#python setup.py install
+
+Commands :
+
+#wafw00f -l
+#wafw00f https://www.domain.com
+#wafw00f  -a https://www.domain.com
+#wafw00f -v https://www.domain.com
+
+Nmap : This tool is used to perform many things over here.
+
+Commands :
+
+#nmap -p 80,443 <ip address/ domain.com>
+#nmap -p 80,443 --script=http-waf-detect <ip address/ domain.com>
+#nmap -p 80,443 --script=http-waf-fingerprint <ip address/ domain.com>

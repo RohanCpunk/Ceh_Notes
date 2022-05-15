@@ -1,0 +1,111 @@
+                                                                 Social Engineering
+
+Social Engineering is the non-technical part of gaining information.
+
+Social Engineering Statistics :
+Social Engineering is an act of stealing sensitive information from humans. As it does not have any interaction with the targets on network.
+Social Engineering is considered as the art of convincing the victim to reveal sensitive information. It may be physically one-to-one
+interaction with the victim or convincing the victim on any platform such as social media.
+
+Factors that make companies Vulnerable to Attacks :
+Insufficient Security Training
+Unregulated Access to the Information
+Several Organizational Units.
+Lack of Security Policies
+
+It is difficult to detect social engineering attempts
+There is no method to ensure complete security from social
+engineering attacks.
+
+Types of Social Engineering
+
+Human-based Social Engineering -
+
+Impersonation
+1. It is most common human-based social engineering technique.
+2. Impersonation means pretending to be someone or something. Impersonating in social engineering is pretending of an attacker to be legitimate user or pretending to
+be an authorized person, either personally or using a communication medium such as phone, email, Etc.
+3. Impersonation helps attackers in tricking a target to reveal sensitive information.
+
+Eavesdropping
+1. Eavesdropping is the act of secretly or stealthily listening to the private conversation or communications of others without their consent in order to gather
+information.Interception of audio, video, or written communication.
+2. It can be done using communication channels such as telephone lines, email, instant messaging, etc.
+
+Shoulder Surfing
+It is a direct observation technique like looking over someone’s shoulder to know the sensitive information like password, pin numbers, etc.
+
+Dumpster Diving
+Any confidential or sensitive document should be properly shredded before disposed into the dustbin. If not, an attacker may just look into the
+dustbin to access the confidential information.
+
+Reverse Social Engineering
+A situation in which an attacker presents himself as an authority and the target seeks his advice offering the information that he needs
+Reverse social engineering attack involves sabotage, marketing, and tech support.
+
+Computer-based Social Engineering
+Pop-up windows - Windows that suddenly pop up while surfing the internet and ask for users information to login or signup.
+Spam mail - irrelevant, unwanted and unsolicited email to collect the finacial information, social security numbers and network information.
+
+Phishing or mass phishing
+Creating a cloned fake website trying to gather sensitive information about users. It can be done by sending a fake email as though coming from an original website
+and then trying to collect confidential information.
+Phishing emails or pop-ups redirect users to fake webpages of mimicking trustworthy sites that ask them to submit their personal information.
+To sent fake email ( HYPERLINK "https://anonymousemail.me/"https://anonymousemail.me/) , (https://emkei.cz/), (sendinblue)
+
+Spear Phishing
+Spear phishing is a direct, targeted phishing attack aimed at specific individuals within an organization.
+In contrast to normal phishing attack where attackers send out hundreds of generic messages to random email addresses, attackers use spear phishing to send a message with specialized, social engineering content directed at a specific person or a small group of people. 
+Spear phishing generates higher response rate when compared to normal phishing attack.
+
+Repacking Legitimate Apps
+Attacker initially download a popular, most in-demand application from application store typically Games and Anti-virus are most commonly used.
+Attacker repackages the application with malware and uploads it to a third-party store.
+
+SMS Based
+Sending a fake SMS saying that user has won a bounty, urging victim to register with confidential information or try and collect other important details.
+
+Insider Attacks
+If a disgruntled employee wants to take revenge, he can install malicious applications to steal/modify information,
+causing significant damage to the organization or he can be bribed by the competitor to reveal or steal company secrets, intellectual property information, etc.
+An inside attack is easy to launch.
+Prevention is difficult.
+The inside attacker can easily succeed.
+
+Preventing Insider Attacks
+- Separation and rotation of duties
+- Least privilege
+- Controlled access
+- Logging and auditing
+- Legal policies
+Note - There is no Single Solution to prevent an insider threat
+
+Identify Theft
+Identity theft occurs when someone steals your personally identifiable information for fraudulent purposes.
+It is a crime in which an imposter obtains personal identifying information such as name, credit card number, social security or driver license numbers, etc. to commit
+fraud or other crimes.
+Attackers can use identity theft to impersonate employees of a target organization and physically access the facility
+
+Social Engineering Countermeasures
+Social Engineering attacks can be mitigated by several methods. Privacy in the corporate environment is necessary to mitigate shoulder surfing and dumpster diving
+threats.
+Configure Strong Passwords, Securing Passwords, keeping them secret will protect against social Engineering.
+Anti-Virus/Anti-Phishing Defenses: Use multiple layers of anti-virus defenses at end-user and mail gateway levels to minimize social engineering attacks. 
+Two-Factor Authentication: Instead of fixed passwords, use two-factor authentication for high-risk network services such as VPNs and modem pools.
+
+https://youtu.be/BEHl2lAuWCk
+
+Bonus
+Some Movies
+Matchstick Men - 2003
+Catch Me If You Can - 2002
+Ocean's Eleven - 2001
+Mr Robot Web Series
+Mickey Virus
+Because, Movies is an excellent way to study in the art of social engineering, the act of manipulating people into performing actions or divulging confidential information.
+
+Tools :
+setoolkit
+advphishing
+zphisher
+seeker

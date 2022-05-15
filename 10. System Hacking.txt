@@ -1,0 +1,60 @@
+                                                                   System Hacking
+
+System Hacking is the way Hackers get access to individual computers.
+
+Active Online Attacks
+
+Attacker performs password cracking by directly communicating with the victim machine.
+Trojan/Spyware/Keyloggers
+Attacker installs Trojan/Spyware/Keylogger on victim's machine to collect victim's user names and passwords.
+Trojan/Spyware/Keylogger runs in the background and send back all user credentials to the attacker.
+
+Password Guessing
+
+Default Passwords for routers/devices :
+A default password is a password supplied by the manufacturer with new equipment (e.g. switches, hubs, routers) that is password protected.
+Attackers use default passwords in the list of words or dictionary that they use to perform password guessing attack.
+Online tools to Search Default Passwords
+http://cirt.net
+http://default-password.info
+http://www.routerpasswords.com
+
+1. OS Bypassing
+
+Online Procedure - First Crack Password then get files
+Error Generation Method - To create conflit when system loads files from the boot manager
+Offline Pro - Use Bypass OS and get files without cracking Password
+
+1. Windows - Win7/win8/win10
+2. Linux - Kali/Ubantu
+
+
+1. Online Method
+When you need to crack or bypass the password, change the OS login password when the system is up, and you do not know the current password. It only
+works in windows ultimate or professional version.
+1. Right click on "My Computers"
+2. Click on "Manage"
+3. Click on "Local Users and Groups", in the left pane
+4. Click on "Users"
+5. Choose the user, for whom you want to change the password.
+6. Right Click
+7. Set Password
+
+2. Offline Method
+This is the condition, when the device is in shut down mode and we cannot open the group editing policies.
+SAM - Security Account Manager
+C:\Windows\System32\Config\SAM
+Hiren Boot CD
+Kon Boot CD
+These are live bootable OS. We use tools like Rufus, to make the media bootable.
+BIOS - Basic Input Output System
+Live OS - It replaces the BIOS of the Computer or the device from the one which is in the bootable media.
+
+3. Kali linux password bypass -
+Here is some steps
+1. Start your system normally
+2. After bootloader start click on e button on keyboard
+3. Now find linux word starting line and go to the last part of the line and then you will find ro quiet splash and just remove all words until
+ro word and type rw init=/bin/bash and press ctrl+x and then press f10 then we will get the terminal of root.
+4. Now we can change our kali password by typing command #passwd root(Username)
+5. Then type command #exec /sbin/init our kali will get restart and our password is changed successfully.

